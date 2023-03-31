@@ -50,8 +50,6 @@ public class LoginActivity extends AppCompatActivity {
                 String result = "";
                 try {
                     result = task.get();
-                    // здесь основной поток будет блокирован, пока AsyncTask не завершится
-                    // после этого result будет содержать результат выполнения doInBackground
                 } catch (InterruptedException | ExecutionException e) {
                     e.printStackTrace();
                 }

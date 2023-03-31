@@ -114,15 +114,10 @@ public class SecondFragment extends Fragment {
                     Integer result = -1;
                     try {
                         result = task.get();
-                        // здесь основной поток будет блокирован, пока AsyncTask не завершится
-                        // после этого result будет содержать результат выполнения doInBackground
                     } catch (InterruptedException | ExecutionException e) {
                         e.printStackTrace();
                     }
-
                     binding.textPrediction.setText(result.toString());
-
-
                 } else {
                     Toast.makeText(getContext(), "Select an image first", Toast.LENGTH_LONG).show();
                 }

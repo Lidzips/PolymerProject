@@ -6,8 +6,6 @@ from data_login import login
 from data_userhistory import history
 from data_newuser import newuser
 from neunet_predict import predict
-import io
-import os
 from PIL import Image
 
 
