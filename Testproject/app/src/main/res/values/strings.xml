@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Test project</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Welcome</string>
+    <string name="second_fragment_label">Image processing</string>
+    <string name="choose">Select image</string>
+    <string name="history">History</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="first_fragment_description"> \u0020 Данное приложение позволяет распознавать полимеры на фотографиях при помощи нейросетей и использвания нечеткой логики. \n\n \u0020 Чтобы начать нажмите на кнопку Select image и выберите нужное изображение из галереи. Чтобы просмотреть историю, нажмите History.</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Paste BOTH strings as required -->
+    <string name="back4app_app_id">Due5evl8gkiMRJw4FRHZglWZIqmlW5QljemqQImx</string>
+    <string name="back4app_client_key">RlzNJbjBrffDzIvmds9X1xvtMWVF0mMEHti4OTcU</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">\u0020 Это администраторская часть приложения. Здесь можно выставить параметры для повторного обучения нейросети нажав на кнопку Retrain, или добавить изображение для тренировочного датасета нейросети нажав кнопку Add picture.</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_admin">AdminActivity</string>
+</resources>

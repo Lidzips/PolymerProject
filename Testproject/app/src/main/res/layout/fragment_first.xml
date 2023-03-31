@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="340dp"
+        android:layout_height="381dp"
+        android:text="@string/first_fragment_description"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/history_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/history_btn"
+        android:layout_width="157dp"
+        android:layout_height="76dp"
+        android:text="@string/history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/select_btn"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/select_btn"
+        android:layout_width="157dp"
+        android:layout_height="76dp"
+        android:text="@string/choose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/history_btn"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

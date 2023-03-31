@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/First2Fragment">
+
+    <fragment
+        android:id="@+id/First2Fragment"
+        android:name="com.example.testproject.First2Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first2">
+
+        <action
+            android:id="@+id/action_First2Fragment_to_Second2Fragment"
+            app:destination="@id/Second2Fragment" />
+        <action
+            android:id="@+id/action_First2Fragment_to_parametersFragment"
+            app:destination="@id/parametersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second2Fragment"
+        android:name="com.example.testproject.Second2Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second2">
+
+        <action
+            android:id="@+id/action_Second2Fragment_to_First2Fragment"
+            app:destination="@id/First2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/parametersFragment"
+        android:name="com.example.testproject.ParametersFragment"
+        android:label="fragment_parameters"
+        tools:layout="@layout/fragment_parameters" >
+        <action
+            android:id="@+id/action_parametersFragment_to_First2Fragment"
+            app:destination="@id/First2Fragment" />
+    </fragment>
+</navigation>
